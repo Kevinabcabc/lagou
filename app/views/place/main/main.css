@@ -1,0 +1,25 @@
+h2{
+    position: absolute;
+    top: 0.44rem;
+    left: 0;
+    width: 100%;
+    height: 1.56rem;
+    background: #eee;
+    color: #00b38a;
+    font-size: 0.25rem;
+    font-weight: normal;
+}
+
+.content{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.18rem;
+    color: #666;
+}
+
+
+
+

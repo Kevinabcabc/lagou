@@ -1,0 +1,80 @@
+module.exports = {
+    index: [
+        './app/utils/api.js',
+        './app/common/footer/footer.js',
+        './app/common/header/header.js',
+        './app/common/refresh-loadmore/scroll.js',
+        './app/common/loading/loading.js',
+        './app/utils/tool.js',
+        './app/views/index/**/*.js',
+    ],
+    login:[
+        './app/utils/api.js',
+        './app/common/header/header.js',
+        './app/utils/api.js',
+        './app/utils/tool.js',
+        './app/views/login/**/*.js',
+    ],
+    register:[
+        './app/utils/api.js',
+        './app/common/header/header.js',
+        './app/utils/api.js',
+        './app/utils/tool.js',
+        './app/views/register/**/*.js',
+    ],
+    mine:[
+        './app/utils/api.js',
+        './app/common/header/header.js',
+        './app/common/footer/footer.js',
+        './app/views/mine/**/*.js',
+    ],
+    search:[
+        './app/utils/api.js',
+        './app/common/header/header.js',
+        './app/common/footer/footer.js',
+        './app/common/citybar/citybar.js',
+        './app/utils/tool.js',
+        './app/views/search/**/*.js',
+    ],
+    edit:[
+        './app/common/header/header.js',
+        './app/views/edit/**/*.js',
+    ],
+    job:[
+        './app/common/header/header.js',
+        './app/views/job/**/*.js',
+    ],
+    place:[
+        './app/common/header/header.js',
+        './app/common/citybar/citybar.js',
+        './app/views/place/**/*.js',
+    ],
+    salary:[
+        './app/common/header/header.js',
+        './app/views/salary/**/*.js',
+    ],
+    company:[
+        './app/common/header/header.js',
+        './app/views/company/**/*.js',
+    ],
+    userinfo:[
+        './app/views/userinfo/**/*.js',
+    ],
+    userinfo2:[
+        './app/views/userinfo2/**/*.js',
+    ],
+    userintro:[
+        './app/common/header/header.js',
+        './app/views/userintro/**/*.js',
+    ],
+    jobinfo:[
+        './app/utils/api.js',
+        './app/common/header/header.js',
+        './app/views/jobinfo/**/*.js',
+    ],
+
+
+}
+
+
+

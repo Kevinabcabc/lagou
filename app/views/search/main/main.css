@@ -1,0 +1,55 @@
+.banner{
+    position: absolute;
+    top: 0.44rem;
+    height: 0.5rem;
+    width: 100%;
+    font-size: 0.2rem;
+    border-bottom: 0.01rem solid #eee;
+    display: flex;
+}
+.banner .citySelect{
+    width: 1rem;
+    border-right: 0.01rem solid #eee;
+    text-align: center;
+    line-height: 0.5rem;
+}
+.banner .citySelect b{
+    display: inline-block;
+    font-weight: normal;
+    transform: rotate(90deg) scale(0.8);
+}
+.banner .city{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.2rem;
+    color: #333;
+    box-sizing: border-box;
+    padding-left: 0.2rem;
+}
+.banner .search{
+    width: 0.9rem;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.5rem;
+    color: #666;
+}
+
+.content{
+    position: fixed;
+    top: 0.44rem;
+    width: 100%;
+    bottom: 0.49rem;
+    z-index: 10;
+    background: white;
+}
+
+.mainlist{
+    position: absolute;
+    top:0.94rem ;
+    bottom: 0.49rem;
+    width: 100%;
+    overflow: scroll;;
+}
+
+

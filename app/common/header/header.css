@@ -1,0 +1,31 @@
+.header{
+    height: 0.44rem;
+    width: 100%;
+    background: #00b38a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 0.23rem;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.go-back{
+    position: absolute;
+    left: 0;
+    font-size: 0.2rem;
+    padding: 0.15rem;
+    line-height: 0.44rem;
+}
+.go-home{
+    position: absolute;
+    right: 0;
+    font-size: 0.2rem;
+    padding: 0.15rem;
+    line-height: 0.44rem;
+
+}
+
+
+

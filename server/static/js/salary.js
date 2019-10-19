@@ -1,0 +1,1 @@
+"use strict";$(".go-back").on("tap",function(){history.back()}),$(".go-home").on("tap",function(){window.open("/index","_self")}),$(".content").on("tap","p",function(){var o=JSON.parse(localStorage.getItem("userJobInfo"));o[2]=$(this).text(),localStorage.setItem("userJobInfo",JSON.stringify(o)),window.open("/edit","_self")});

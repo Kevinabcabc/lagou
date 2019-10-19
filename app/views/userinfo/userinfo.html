@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function resetRemUnit() {
+
+            // 获得设备像素比
+            var radio = window.devicePixelRatio;
+            // 处理设备像素比，只能是1，2，3
+            radio = radio >= 3 ? 3 : (radio >= 2 ? 2 : 1);
+            // 判断是否有meta标签
+            var viewportDOM = document.querySelector('meta[name=viewport]');
+            if (!viewportDOM) {
+                viewportDOM = document.createElement('meta');
+                viewportDOM.setAttribute('name', 'viewport');
+            }
+            // 计算页面缩放比例
+            var scale = 1 / radio;
+            var content = 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale +
+                ', minimum-scale=' + scale + ', user-scalable=no';
+            viewportDOM.setAttribute('content', content);
+            // 添加meta标签
+            document.head.appendChild(viewportDOM);
+
+
+            // 控制计算rem的最大最小适配页面
+            var min = 320 * radio;
+            var max = 540 * radio;
+            var width = document.documentElement.clientWidth || window.innerWidth || document.documentElement
+                .getBoundingClientRect().width;
+            if (width < min) {
+                width = min;
+            } else if (width > max) {
+                width = max;
+            }
+            // 计算rem
+            document.documentElement.style.fontSize = (width * 100 / 415) + 'px';
+        }
+
+        resetRemUnit();
+        window.onresize = resetRemUnit;
+    </script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/userinfo.css">
+</head>
+
+<body>
+    <main class="main">
+        <h3>完善基本信息</h3>
+
+        <div class="input-box">
+            <input type="text" class="name" placeholder="姓名">
+            <select class="school">
+                <option value="大专">大专</option>
+                <option value="本科">本科</option>
+                <option value="硕士">硕士</option>
+                <option value="博士">博士</option>
+                <option value="其他">其他</option>
+            </select>
+            <select class="worktime">
+                <option value="应届毕业生">应届毕业生</option>
+                <option value="1年">1年</option>
+                <option value="2年">2年</option>
+                <option value="3年">3年</option>
+                <option value="4年">4年</option>
+                <option value="5年">5年</option>
+                <option value="6年">6年</option>
+                <option value="6年以上">6年以上</option>
+    
+            </select>
+
+        </div>
+
+        <div class="next item-center">
+            下一步
+        </div>
+
+    </main>
+
+
+    <script src="/public/lib/zepto.min.js"></script>
+    <script src="/public/js/userinfo.js"></script>
+</body>
+
+</html>

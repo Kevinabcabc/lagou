@@ -1,0 +1,1 @@
+"use strict";$(".go-back").on("tap",function(){history.back()}),$(".go-home").on("tap",function(){window.open("/index","_self")}),$(".content").on("tap","p",function(){var o=JSON.parse(localStorage.getItem("userJobInfo"));(o=o||["产品经理","上海","10-15k","上市公司"])[0]=$(this).text(),localStorage.setItem("userJobInfo",JSON.stringify(o)),window.open("/edit","_self")});

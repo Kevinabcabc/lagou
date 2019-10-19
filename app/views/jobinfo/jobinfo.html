@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function resetRemUnit() {
+
+            // 获得设备像素比
+            var radio = window.devicePixelRatio;
+            // 处理设备像素比，只能是1，2，3
+            radio = radio >= 3 ? 3 : (radio >= 2 ? 2 : 1);
+            // 判断是否有meta标签
+            var viewportDOM = document.querySelector('meta[name=viewport]');
+            if (!viewportDOM) {
+                viewportDOM = document.createElement('meta');
+                viewportDOM.setAttribute('name', 'viewport');
+            }
+            // 计算页面缩放比例
+            var scale = 1 / radio;
+            var content = 'width=device-width, initial-scale=' + scale + ', maximum-scale=' + scale +
+                ', minimum-scale=' + scale + ', user-scalable=no';
+            viewportDOM.setAttribute('content', content);
+            // 添加meta标签
+            document.head.appendChild(viewportDOM);
+
+
+            // 控制计算rem的最大最小适配页面
+            var min = 320 * radio;
+            var max = 540 * radio;
+            var width = document.documentElement.clientWidth || window.innerWidth || document.documentElement
+                .getBoundingClientRect().width;
+            if (width < min) {
+                width = min;
+            } else if (width > max) {
+                width = max;
+            }
+            // 计算rem
+            document.documentElement.style.fontSize = (width * 100 / 415) + 'px';
+        }
+
+        resetRemUnit();
+        window.onresize = resetRemUnit;
+    </script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/jobinfo.css">
+</head>
+
+<body>
+    <header class="header item-center">
+        <span class="iconfont icon-zuo go-back"></span>
+        <span>拉勾网</span>
+    </header>
+
+    <div class="content">
+        <div class="wrap">
+
+
+            <!-- <div class="jobAndLike item-center">
+                <p class="item-center">招商经理</p>
+                <div class="like">
+                    <p>★</p>
+                    <span>已收藏</span>
+                </div>
+            </div>
+
+            <div class="jobinfo">
+
+                <span>10-20k</span>
+                <span>杭州</span>
+                <span>全职</span>
+                <span>工作地不限</span>
+                <span>学历不限</span>
+
+                <p>职位诱惑：期权，股份，高提成，成长空间大 </p>
+
+
+            </div>
+
+
+            <div class="company">
+
+                <div class="companyPic">
+                    <img src="http://a.300.cn/toutiao-head/t29087bn.jpg" alt="">
+                </div>
+
+                <div class="companyBox">
+                    <h3>工贸</h3>
+                    <p><span>移动互联网</span>/<span>天使论</span>/<span>150-500人</span></p>
+                </div>
+
+            </div>
+
+            <div class="jobIntroHead">职位描述</div>
+            <div class="jobIntroContent">
+                <p>职位描述：</p>
+                <p>1、负责完成总监分解下来得招商任务指标；&nbsp;</p>
+                <p>2、根据市场状况及公司总体招商计划参与制定招商部工作计划、并按计划参与公司制定得工作任务；&nbsp;</p>
+                <p>3、根据新媒体得广告投放，从而邀约客户到场合作；&nbsp;</p>
+                <p>4、密切关注市场动态及客户要求，并及时总结和反馈。&nbsp;</p>
+                <p>岗位要求：&nbsp;</p>
+                <p>1、学历：大专以上学历，市场营销相关专业毕业优先，有相关经验者可适当放宽条件；&nbsp;</p>
+                <p>2、其他能力：有较强得抗压能力和沟通协调能力。</p>
+                <p>3、有赚钱欲望肯努力</p>
+            </div> -->
+        </div>
+    </div>
+
+
+    <div class="send">
+        <p class="item-center">投递简历</p>
+    </div>
+
+
+    <script src="/public/lib/zepto.min.js"></script>
+    <script src="/public/lib/iscroll-probe.js"></script>
+    <script src="/public/js/jobinfo.js"></script>
+</body>
+
+</html>

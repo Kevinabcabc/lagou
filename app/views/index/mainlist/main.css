@@ -1,0 +1,57 @@
+.mainlist{
+    position: absolute;
+    width: 100%;
+    top: 0.88rem;
+    left: 0;
+    bottom: 0.49rem;
+    overflow: hidden;
+}
+
+.mainlist .item{
+    height: 0.9rem;
+    width: 100%;
+    padding: 0.14rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.2rem;
+    border-bottom: 1px solid #999;
+}
+
+.mainlist .item .companyPic{
+    height:0.62rem;
+    width: 0.62rem;
+    border-radius: 50%;
+    padding-right: 0.16rem;
+}
+.mainlist .item .companyPic img{
+    width: 100%;
+    height: 100%;
+}
+
+.mainlist .item .dalaryBox {
+    color: #00b38a;
+}
+
+.mainlist .item .jobInfoBox {
+    flex: 1;
+}
+.mainlist .item .jobInfoBox .company{
+    font-size: 0.21rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+.mainlist .item .jobInfoBox .job{
+    font-size: 0.15rem;
+    line-height: 0.23rem;
+    color: #444;
+}
+
+.mainlist .item .jobInfoBox .time{
+    font-size: 0.14rem;
+    color: #999;
+}   
+
+
+

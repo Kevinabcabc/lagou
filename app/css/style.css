@@ -1,0 +1,76 @@
+body, html, p, ul, ol, ul li, ol li, dt, dl, dd, a, img, i, em, strong, b, table, tr, td, th, input, span, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+    font-size: 100px;
+  }
+  
+  a, hr {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /*a:hover{text-decoration: underline;}*/
+  ul li, ol li,li {
+    list-style: none;
+    float: left;
+  }
+  
+  img {
+    vertical-align: middle;
+    border: none;
+  }
+  
+  input {
+    cursor: pointer;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  body{
+    position: relative;
+  }
+
+  .item-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .font-center{
+    text-align: center;
+    line-height: 0.49rem;
+  }
+
+
+  .border-bottom{
+    position: relative;
+  }
+  
+  .border-bottom::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transform: scaleY(0.5);
+  }
+  
+  /* 单行文本溢出 */
+  .oneline-ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  *{
+    -webkit-tap-highlight-color: transparent;
+  }

@@ -1,0 +1,28 @@
+.refresh, .mainlist .loadmore{
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.refresh img, .mainlist .loadmore img{
+  width: 0.2rem;
+  height: 0.2rem;
+  transition: 300ms;
+}
+.loadmore img{
+  transform: rotate(180deg);
+}
+.refresh img.active{
+  transform: rotate(180deg);
+}
+.loadmore img.active{
+  transform: rotate(0);
+}
+
+.refresh span, .mainlist .loadmore span{
+  height: 0.2rem;
+  font-size: 0.14rem;
+  color: #454545;
+  line-height: 0.2rem;
+}

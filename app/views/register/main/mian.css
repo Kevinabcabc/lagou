@@ -1,0 +1,54 @@
+.content{
+    width: 100%;
+    position: absolute;
+    top: 0.44rem;
+    font-size: 0.2rem;
+    padding: 0.4rem 0.2rem;
+    box-sizing: border-box;
+}
+.content p{
+    height: 0.5rem;
+    border-bottom: 1px solid #999;
+
+}
+.content p input{
+    border: none;
+    outline: none;
+    height: 0.5rem;
+    font-size: 0.15rem;
+    color: #333;
+}
+.content  .phone-num{
+    width: 100%;
+}
+.content .phone-code .code{
+    font-size: 0.12rem;
+    line-height: 0.5rem;
+    float: right;
+    padding-right: 0.2rem;
+}
+
+.content .logIn{
+    width: 100%;
+    height: 0.5rem;
+    font-size: 0.15rem;
+    color: white;
+    background: #00b38a;
+    margin: 0.2rem 0;
+}
+.content .registerBox{
+    width:100%;
+    height: 0.5rem;
+    text-align: center;
+    font-size: 0.15rem;
+    
+    /* color: white; */
+    /* background: #00b38a; */
+    margin: 0.2rem 0;
+    border: none;
+}
+
+.content .registerBox .register{
+    padding: 0.2rem;
+    color: #00b38a;
+}

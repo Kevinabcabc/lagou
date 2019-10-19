@@ -1,0 +1,43 @@
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.loading .cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.loading  .loading-panel{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading  .loading-panel img{
+    width: 60%;
+    height: 60%;
+    
+}
+
+.loading  .loading-panel span{
+    font-size: 0.14rem;
+    color: white;
+    padding-top: 0.1rem;
+    
+}

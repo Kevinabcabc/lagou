@@ -1,0 +1,129 @@
+.send{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.69rem;
+    width: 100%;
+    padding: 0.1rem;
+    box-sizing: border-box;
+    background: white;
+    z-index: 100;
+}
+
+
+.content{
+    position: absolute;
+    top: 0.44rem;
+    bottom: 0.69rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.send p{
+    height: 100%;
+    width: 100%;
+    font-size: 0.2rem;
+    background: #0ac599;
+    color: white;
+}
+
+
+
+.content .jobAndLike{
+    height: 0.6rem;
+    width: 100%;
+    border-bottom: 0.01rem solid #ddd;
+    font-size: 0.2rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .jobAndLike>p{
+    width: 2rem;
+    font-weight: bold;
+}
+.content .jobAndLike .like{
+    width: 1rem;
+    text-align: center;
+    font-size: 0.15rem;
+}
+
+.content .jobAndLike .like p{
+    font-size: 0.23rem;
+    color: #ffe11a
+}
+
+.content .jobinfo{
+    width: 100%;
+    border-bottom: 0.01rem solid #ddd;
+    font-size: 0.2rem;
+    padding: 0.15rem ;
+    box-sizing: border-box;
+}
+
+.content .jobinfo span{
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    line-height: 0.35rem;
+}
+
+.content .jobinfo p{
+    color: #999;
+    margin: 0.1rem 0;
+    line-height: 0.35rem;
+    font-size: 0.18rem;
+}
+
+.content  .company{
+    width: 100%;
+    font-size: 0.2rem;
+    padding: 0.15rem ;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+.content  .company .companyPic{
+    height: 0.8rem;
+    width: 0.8rem;
+}
+.content  .company .companyPic img{
+    height: 100%;
+    width: 100%;
+}
+.content  .company .companyBox{
+   padding-left: 0.15rem;
+}
+.content  .company .companyBox h3{
+    font-size: 0.25rem;
+    color: rgb(35, 177, 163);
+    line-height: 0.5rem;
+}
+.content  .company .companyBox p{
+    font-size: 0.16rem;
+    color: #999;
+}
+.content  .jobIntroHead{
+    height: 0.5rem;
+    width: 100%;
+    background: #d2f9f0;
+    color: #00b38a;
+    line-height: 0.5rem;
+    padding-left: 0.2rem;
+    font-size: 0.2rem;
+    font-weight: 200;
+}
+.content .jobIntroContent{
+    width: 100%;
+    font-size: 0.18rem;
+    color: #666;
+    padding: 0.15rem;
+    box-sizing: border-box;
+}
+
+
+
+

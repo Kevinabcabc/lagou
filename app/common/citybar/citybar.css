@@ -1,0 +1,25 @@
+.content{
+    font-size: 0.18rem;
+}
+.content .someCityBox{
+    width: 100%;
+}
+.content .someCityBox h5{
+    font-weight: normal;
+    color: #999;
+    line-height: 0.3rem;
+}
+.content .someCityBox .someCity{
+    border-top: 0.01rem solid #ddd;
+    border-bottom: 0.01rem solid #ddd;
+}
+
+
+.content .someCityBox .someCity p{
+    display: inline-block;
+    color: #444;
+    width: 32%;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.6rem;
+}

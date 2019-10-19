@@ -1,0 +1,1 @@
+"use strict";$(".next").on("tap",function(){var o={name:$(".name").val(),school:$(".school").val(),worktime:$(".worktime").val()};localStorage.setItem("userinfo",JSON.stringify(o)),window.open("/userinfo2","_self")});
